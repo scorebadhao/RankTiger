@@ -2,16 +2,16 @@
   "schema_version": 2,
   "product": "RankTiger",
   "environment": "production",
-  "release_status": "stable",
-  "version": "1.0.0",
+  "release_status": "candidate",
+  "version": "1.0.1-rc.1",
   "source_repository": "scorebadhao/ScoreMore",
-  "source_commit": "0464715f3b495f2e07438ad6d9f795da7fccff4c",
+  "source_commit": "9564c8c7e91b66e00788d46fb4f9aad68814510d",
   "source_ref": "main",
   "build_target": "ranktiger",
   "base_path": "/",
-  "built_at_utc": "2026-08-11T16:13:05.723Z",
+  "built_at_utc": "2026-08-12T23:16:54.662Z",
   "dist_file_count": 11,
-  "dist_sha256": "fb0f999ba6a364544a4111229ac12d91cf235b64234499ee7abafa27425709a8",
+  "dist_sha256": "b7d53df537c89e025fb89f097edadebb9b4b8592977bbb60ffcf944bf5c26886",
   "dependencies": {
     "package_lock_required": true,
     "package_json_sha256": "433d57137dbeacdd1985ccb7f3e63653ef8de322685deee2fd1d932c0997fe22",
@@ -28,12 +28,9 @@
     "production_migration_applied_by_this_workflow": false
   },
   "promotion": {
-    "ranktiger_repository_updated": true,
+    "ranktiger_repository_updated": false,
     "cloudflare_deployed": false,
     "student_domain_deployed": false,
-    "promoted_from_rc": "1.0.0-rc.1",
-    "promoted_at_utc": "2026-08-12T20:10:18.233Z",
-    "rollback_tag": "rollback-pre-v1.0.0",
-    "note": "Stable main promotion approved after hosted RC smoke testing. Cloudflare Pages production deployment is triggered separately by the RankTiger main push; custom-domain activation remains a separate gate."
+    "note": "Patch 6 release-candidate artifact only. Stable promotion remains intentionally disabled."
   }
 }
