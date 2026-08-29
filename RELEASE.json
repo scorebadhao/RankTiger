@@ -2,38 +2,37 @@
   "schema_version": 2,
   "product": "RankTiger",
   "environment": "production",
-  "release_status": "stable",
-  "version": "1.0.1",
+  "release_status": "candidate",
+  "version": "1.1.0-rc.2",
   "source_repository": "scorebadhao/ScoreMore",
-  "source_commit": "9564c8c7e91b66e00788d46fb4f9aad68814510d",
+  "source_commit": "9510ec9b4cc90cf579b666f87af54b3eb9165985",
   "source_ref": "main",
   "build_target": "ranktiger",
   "base_path": "/",
-  "built_at_utc": "2026-08-12T23:16:54.662Z",
-  "dist_file_count": 11,
-  "dist_sha256": "b7d53df537c89e025fb89f097edadebb9b4b8592977bbb60ffcf944bf5c26886",
+  "built_at_utc": "2026-08-28T19:23:05.554Z",
+  "dist_file_count": 12,
+  "dist_sha256": "9e2fa91006a53dc2f17b35f0d7ddadab89c52e204a3772419d63d505ff09b449",
   "dependencies": {
     "package_lock_required": true,
-    "package_json_sha256": "433d57137dbeacdd1985ccb7f3e63653ef8de322685deee2fd1d932c0997fe22",
+    "package_json_sha256": "b4bd379f3de2004dd409b974005b354bebdd62f070db12b90dd7281e5f773507",
     "package_lock_sha256": "1d6905c3402d21972cf03d8ad8da283ad5cf32a33ec17ba7cbe3398967799b0e",
     "package_lock_version": 3
   },
   "database": {
-    "migrations_in_source": 20,
-    "latest_source_migration": "20260811020000_public_catalogue_baseline.sql",
-    "required_migration_lock_file": "docs/LOCKED_MIGRATION_CHECKSUMS_PATCH5_2.json",
-    "required_migration_count": 20,
+    "migrations_in_source": 25,
+    "latest_source_migration": "20260826212517_admin_task_inbox_published_image_queue.sql",
+    "required_migration_lock_file": "docs/LOCKED_MIGRATION_CHECKSUMS_RANKTIGER_25.json",
+    "required_migration_lock_version": "RANKTIGER_25",
+    "required_migration_lock_sha256": "fcc9792ada27812864d3e47d1ca011213f487c71fe5ff3c89a2bf12bfc5ea93f",
+    "required_migration_count": 25,
     "production_project_id": "ysyeskosmwpzsaxlpksv",
     "production_public_baseline_verified_before_build": true,
     "production_migration_applied_by_this_workflow": false
   },
   "promotion": {
-    "ranktiger_repository_updated": true,
+    "ranktiger_repository_updated": false,
     "cloudflare_deployed": false,
     "student_domain_deployed": false,
-    "promoted_from_rc": "1.0.1-rc.1",
-    "promoted_at_utc": "2026-08-12T23:46:39.651Z",
-    "rollback_tag": "rollback-pre-v1.0.1",
-    "note": "Stable main promotion approved after hosted RC smoke testing. Cloudflare Pages production deployment is triggered separately by the RankTiger main push; custom-domain activation remains a separate gate."
+    "note": "RankTiger release-candidate artifact only. Stable promotion remains intentionally disabled."
   }
 }
