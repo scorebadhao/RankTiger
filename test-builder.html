@@ -6,10 +6,11 @@
   <meta name="theme-color" content="#111827" />
   <meta name="description" content="RankTiger Phase 4A dynamic multi-filter fixed-question test builder." />
   <title>Dynamic Test Builder · RankTiger Admin</title>
-  <script type="module" crossorigin src="/assets/testBuilder-Dt-ZnzFy.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/toast-DltZsFZu.js">
+  <script type="module" crossorigin src="/assets/testBuilder-CggsmmZV.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/toast-CQzTdFIf.js">
+  <link rel="modulepreload" crossorigin href="/assets/turnstile-CcyiKIhs.js">
   <link rel="modulepreload" crossorigin href="/assets/adminShell-BUAyvVil.js">
-  <link rel="stylesheet" crossorigin href="/assets/toast-BA6WrxqK.css">
+  <link rel="stylesheet" crossorigin href="/assets/toast-DUS-mjHX.css">
   <link rel="stylesheet" crossorigin href="/assets/testBuilder-Bv3iyhL6.css">
 </head>
 <body class="admin-body phase4a-body">
@@ -54,6 +55,7 @@
         <form id="phase4aLoginForm" class="auth-form" novalidate>
           <label>Email<input name="email" type="email" autocomplete="email" required /></label>
           <label>Password<input name="password" type="password" autocomplete="current-password" required /></label>
+          <div id="builderSignInTurnstile" class="turnstile-slot"></div>
           <button class="button button-primary button-block" type="submit">Sign in</button>
         </form>
       </section>

@@ -6,9 +6,11 @@
   <meta name="theme-color" content="#0f766e" />
   <meta name="description" content="RankTiger student hub, dynamic tests, saved questions and performance analytics." />
   <title>RankTiger Student Hub</title>
-  <script type="module" crossorigin src="/assets/student-Bsv2DvOb.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/toast-DltZsFZu.js">
-  <link rel="stylesheet" crossorigin href="/assets/toast-BA6WrxqK.css">
+  <script type="module" crossorigin src="/assets/student-XzJVkOVO.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/toast-CQzTdFIf.js">
+  <link rel="modulepreload" crossorigin href="/assets/connectionState-DuCZ3khG.js">
+  <link rel="modulepreload" crossorigin href="/assets/testTypes-CKsVFdip.js">
+  <link rel="stylesheet" crossorigin href="/assets/toast-DUS-mjHX.css">
 </head>
 <body class="student-body">
   <a class="skip-link" href="#mainContent">Skip to main content</a>
@@ -41,7 +43,7 @@
         <span class="brand-copy"><strong id="brandName">RankTiger</strong><small id="brandTagline">Prepare smarter</small></span>
       </a>
       <div class="header-actions">
-        <span id="syncState" class="sync-badge" aria-live="polite"><span class="sync-dot"></span>Online</span>
+        <span id="syncState" class="sync-badge checking" role="status" aria-live="polite"><span class="sync-dot" aria-hidden="true"></span><span class="sync-label-full">Connecting…</span><span class="sync-label-short">Checking…</span></span>
         <button id="profileShortcut" class="icon-button" data-route="#profile" type="button" aria-label="Open profile"><svg class="icon"><use href="#i-user"></use></svg></button>
       </div>
     </header>
@@ -68,9 +70,9 @@
 
           <div class="section-heading compact dashboard-section-heading"><div><span class="eyebrow">Quick practice</span><h2>Choose your next test</h2></div><button class="text-button" data-route="#tests" type="button">View all</button></div>
           <div class="dashboard-grid hub-quick-grid">
-            <button class="dashboard-card" data-test-filter="PYQ_FULL" type="button"><span class="dashboard-icon"><svg class="icon"><use href="#i-file"></use></svg></span><span class="dashboard-copy"><strong>Previous Papers</strong><small><b id="quickPyqCount">0</b> ready tests</small></span><svg class="icon card-arrow"><use href="#i-arrow"></use></svg></button>
+            <button class="dashboard-card" data-test-filter="PYQ_FULL" type="button"><span class="dashboard-icon"><svg class="icon"><use href="#i-file"></use></svg></span><span class="dashboard-copy"><strong>PYQ Tests</strong><small><b id="quickPyqCount">0</b> ready tests</small></span><svg class="icon card-arrow"><use href="#i-arrow"></use></svg></button>
             <button class="dashboard-card" data-test-filter="PYQ_SECTIONAL" type="button"><span class="dashboard-icon"><svg class="icon"><use href="#i-layers"></use></svg></span><span class="dashboard-copy"><strong>Sectional Tests</strong><small><b id="quickSectionalCount">0</b> focused tests</small></span><svg class="icon card-arrow"><use href="#i-arrow"></use></svg></button>
-            <button class="dashboard-card" data-test-filter="FULL_MOCK" type="button"><span class="dashboard-icon"><svg class="icon"><use href="#i-target"></use></svg></span><span class="dashboard-copy"><strong>Full Mocks</strong><small><b id="quickMockCount">0</b> simulations</small></span><svg class="icon card-arrow"><use href="#i-arrow"></use></svg></button>
+            <button class="dashboard-card" data-test-filter="FULL_MOCK" type="button"><span class="dashboard-icon"><svg class="icon"><use href="#i-target"></use></svg></span><span class="dashboard-copy"><strong>Mock Tests</strong><small><b id="quickMockCount">0</b> simulations</small></span><svg class="icon card-arrow"><use href="#i-arrow"></use></svg></button>
             <button class="dashboard-card" data-test-filter="DAILY_QUIZ" type="button"><span class="dashboard-icon"><svg class="icon"><use href="#i-clock"></use></svg></span><span class="dashboard-copy"><strong>Daily Quiz</strong><small><b id="quickDailyCount">0</b> available</small></span><svg class="icon card-arrow"><use href="#i-arrow"></use></svg></button>
           </div>
 
