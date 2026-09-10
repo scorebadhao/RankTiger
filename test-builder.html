@@ -6,12 +6,12 @@
   <meta name="theme-color" content="#111827" />
   <meta name="description" content="RankTiger Phase 4A dynamic multi-filter fixed-question test builder." />
   <title>Dynamic Test Builder · RankTiger Admin</title>
-  <script type="module" crossorigin src="/assets/testBuilder-CggsmmZV.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/toast-CQzTdFIf.js">
-  <link rel="modulepreload" crossorigin href="/assets/turnstile-CcyiKIhs.js">
+  <script type="module" crossorigin src="/assets/testBuilder-BQHY5MtC.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/toast-BnISsr59.js">
+  <link rel="modulepreload" crossorigin href="/assets/turnstile-BXuL7fXe.js">
   <link rel="modulepreload" crossorigin href="/assets/adminShell-BUAyvVil.js">
   <link rel="stylesheet" crossorigin href="/assets/toast-DUS-mjHX.css">
-  <link rel="stylesheet" crossorigin href="/assets/testBuilder-Bv3iyhL6.css">
+  <link rel="stylesheet" crossorigin href="/assets/testBuilder-BqmbswRq.css">
 </head>
 <body class="admin-body phase4a-body">
   <div class="app-shell">
@@ -203,6 +203,32 @@
             <button id="phase4aApplyFilters" class="button button-primary" type="button">Apply filters</button>
             <button id="phase4aLoadQuestions" class="hidden" type="button" aria-hidden="true" tabindex="-1">Load question stack</button>
           </div>
+        </section>
+
+        <section id="phase4aSectionalBatchCard" class="panel-card phase4a-batch-card mode-hidden" data-mode-visibility="PYQ_SECTIONAL" aria-labelledby="sectionalBatchTitle">
+          <div class="section-heading compact phase4a-batch-heading">
+            <div>
+              <span class="eyebrow">Batch option</span>
+              <h2 id="sectionalBatchTitle">Create every package subject</h2>
+              <p class="muted">Preview one missing fixed-list sectional test per subject for each selected package. Existing tests—including legacy IDs—are kept unchanged.</p>
+            </div>
+            <span class="phase4a-batch-safety">Draft-only · atomic · no overwrite</span>
+          </div>
+          <div class="phase4a-batch-guidance">
+            <strong>Educator-safe defaults</strong>
+            <span>Each subject gets its complete published question set. Time is calculated at about 36 seconds per question and rounded to 5 minutes. Review every draft before publishing.</span>
+          </div>
+          <div class="phase4a-batch-settings">
+            <label>Marks per question<input id="phase4aBatchMarks" type="number" min="0.001" step="0.001" value="1" /></label>
+            <label>Negative marks<input id="phase4aBatchNegative" type="number" min="0" step="0.001" value="0.25" /></label>
+            <label>Starting catalogue order<input id="phase4aBatchSortOrder" type="number" min="0" step="1" value="1" /></label>
+          </div>
+          <div class="phase4a-batch-actions">
+            <button id="phase4aBatchPreviewButton" class="button button-secondary" type="button">Preview all subjects</button>
+            <button id="phase4aBatchCreateButton" class="button button-primary" type="button" disabled>Create missing drafts</button>
+            <span id="phase4aBatchState" class="muted" aria-live="polite">Select one or more packages, then preview the batch.</span>
+          </div>
+          <div id="phase4aBatchPanel" class="phase4a-batch-panel hidden" aria-live="polite"></div>
         </section>
 
         <section class="panel-card phase4a-question-card" aria-labelledby="questionStackTitle">
